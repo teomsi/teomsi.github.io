@@ -1,50 +1,181 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teomsi.ro - Bine ai venit!</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
-        header {
-            background: #004aad;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #eee;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Awesome Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Bine ai venit pe Teomsi.ro!</h1>
-    </header>
+  <!-- Header / Navbar -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <div class="logo">MyLogo</div>
+      <nav class="main-nav" id="mainNav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
 
-    <section>
-        <h2>Salut!</h2>
-        <p>Aceasta este pagina ta web gratuită găzduită pe GitHub Pages și publicată pe domeniul tău teomsi.ro.</p>
-        <p>Dacă vrei să adaugi pagini, imagini, texte sau un design mai avansat, te pot ajuta.</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Build your next big thing.</h1>
+        <p>
+          Clean, modern, and responsive website layout you can easily customize
+          for your project, business, or portfolio.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="hero-card">Fast</div>
+        <div class="hero-card">Responsive</div>
+        <div class="hero-card">Beautiful</div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        © 2025 Teomsi.ro – Toate drepturile rezervate
-    </footer>
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="section-intro">
+        This website template is designed to be simple to understand and easy
+        to extend. Replace this text with your own story, mission, or brand
+        description.
+      </p>
+      <div class="about-grid">
+        <div>
+          <h3>Who I Am</h3>
+          <p>
+            Write a short bio here: what you do, what you care about, and how
+            you help people or clients.
+          </p>
+        </div>
+        <div>
+          <h3>What I Do</h3>
+          <p>
+            Summarize your key skills, products, or services. Keep each
+            paragraph concise and scannable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <p class="section-intro">
+        Highlight the key benefits that make your product, service, or
+        portfolio stand out.
+      </p>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Performance</h3>
+          <p>Lightweight HTML, CSS, and JS for fast loading times.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Looks great on phones, tablets, and large desktop screens.</p>
+        </article>
+        <article class="card">
+          <h3>Customizable</h3>
+          <p>Easy to tweak colors, fonts, and layout to match your brand.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Services Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-intro">
+        Showcase your best work or services with descriptive cards.
+      </p>
+      <div class="cards-grid">
+        <article class="card project-card">
+          <h3>Project One</h3>
+          <p>
+            Brief description of what this project is about, the tech stack,
+            and the outcome.
+          </p>
+          <a href="#" class="card-link">View details →</a>
+        </article>
+        <article class="card project-card">
+          <h3>Project Two</h3>
+          <p>
+            Another project highlight. Replace these with real examples from
+            your portfolio.
+          </p>
+          <a href="#" class="card-link">View details →</a>
+        </article>
+        <article class="card project-card">
+          <h3>Project Three</h3>
+          <p>
+            Focus on results and value delivered. Keep it easy to skim.
+          </p>
+          <a href="#" class="card-link">View details →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-intro">
+        Ready to collaborate or have questions? Send a message using the form
+        below.
+      </p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> My Awesome Website. All rights reserved.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
